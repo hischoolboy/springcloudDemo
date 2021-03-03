@@ -26,7 +26,7 @@ public class OrderController {
     @Resource
     private DiscoveryClient discoveryClient;
 
-//        public static final String PAYMENT_URL = "http://localhost:8001";
+    //        public static final String PAYMENT_URL = "http://localhost:8001";
     public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
@@ -69,7 +69,7 @@ public class OrderController {
     }
 
     @GetMapping("/consumer/payment/zipkin")
-    public String paymentZipkin(){
+    public String paymentZipkin() {
         String result = restTemplate.getForObject("http://localhost:8001" + "/payment/zipkin/", String.class);
         return result;
     }
