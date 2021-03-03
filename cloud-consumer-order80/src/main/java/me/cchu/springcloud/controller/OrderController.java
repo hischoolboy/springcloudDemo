@@ -26,8 +26,8 @@ public class OrderController {
     @Resource
     private DiscoveryClient discoveryClient;
 
-        public static final String PAYMENT_URL = "http://localhost:8001";
-//    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+//        public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;
@@ -52,7 +52,7 @@ public class OrderController {
             log.info(entity.getStatusCode() + "\t" + entity.getHeaders());
             return entity.getBody();
         } else {
-            return new CommonResult<>(444, "操作失败");
+            return new CommonResult(444, "操作失败", entity);
         }
     }
 

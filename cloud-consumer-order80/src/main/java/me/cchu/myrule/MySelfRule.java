@@ -1,4 +1,4 @@
-package myrule;
+package me.cchu.myrule;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;

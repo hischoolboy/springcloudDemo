@@ -26,7 +26,7 @@ public class MyLB implements LoadBalance {
     @Override
     public ServiceInstance instance(List<ServiceInstance> serviceInstances) {
 
-        int index = getAndIncrement()%serviceInstances.size();
+        int index = getAndIncrement() % serviceInstances.size();
 
         return serviceInstances.get(index);
     }
