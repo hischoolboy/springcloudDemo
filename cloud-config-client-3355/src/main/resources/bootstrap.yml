@@ -13,9 +13,9 @@ spring:
       uri: http://127.0.0.1:3344 # 配置中心的地址
 
   rabbitmq: # rabbitmq 相关配置，15672 是 web 管理端口，5672 是 mq 访问端口
-    host: localhost
+    host: rabbitmq.me.cchu
     port: 5672
-    virtual-host: guest_vhost
+#    virtual-host: guest_vhost
     username: guest
     password: guest
 
