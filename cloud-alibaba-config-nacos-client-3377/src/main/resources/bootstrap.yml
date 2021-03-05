@@ -18,4 +18,4 @@ spring:
 #  ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
 #   nacos-config-client-dev.yml
 #config:
-#  info: 2333333333
+#  info: 233333333333
