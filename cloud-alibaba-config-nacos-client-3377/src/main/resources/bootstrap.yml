@@ -11,7 +11,7 @@ spring:
         server-addr: nacos.cchu.me:8848 # 注册中心
       config:
         server-addr: nacos.cchu.me:8848 # 配置中心
-        file-extension: yml # 这里指定的文件格式需要和nacos上新建的配置文件后缀相同，否则读不到
+        file-extension: yml  # 这里指定的文件格式需要和nacos上新建的配置文件后缀相同，否则读不到
 #        group: DEV_GROUP
 #        namespace: 51779aa5-eac1-4b2d-af3a-2a49894365fd
 
