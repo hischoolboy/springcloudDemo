@@ -12,6 +12,7 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 public class OrderNacosController {
+
     @Resource
     private RestTemplate restTemplate;
 
